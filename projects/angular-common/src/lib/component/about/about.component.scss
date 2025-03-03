@@ -1,0 +1,15 @@
+@use '../../style/common.scss';
+@use '../../style/keyframes.scss';
+
+.container {
+    @include common.flex(column);
+    height: 500px;
+    min-height: 500px;
+    max-height: 500px;
+    width: 1200px;
+    min-width: 1200px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px;
+    background-color: white;
+}

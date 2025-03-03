@@ -1,0 +1,27 @@
+@use '../../style/common.scss';
+@use '../../style/keyframes.scss';
+
+$primary-background-color: #3752db;
+$primary-text-color: white;
+
+.container{
+    @include common.flex(row, space-around, center);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: $primary-background-color;
+    color: white;
+}
+
+.logo{
+    @include common.flex(row, space-around, center);
+    color: $primary-text-color;
+}
+
+.buttons{
+    @include common.flex(row, space-around, center);
+    color: $primary-text-color;
+}

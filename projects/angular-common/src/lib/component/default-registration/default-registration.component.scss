@@ -1,0 +1,86 @@
+@use '../../style/common.scss';
+@use '../../style/keyframes.scss';
+
+$primary-background-color: #3752db;
+
+.container {
+    @include common.flex();
+    height: 600px;
+    min-height: 600px;
+    max-height: 600px;
+    width: 600px;
+    min-width: 600px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.card{
+    @include common.flex(column);
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    width: 600px;
+    min-width: 600px;
+    max-width: 600px;
+    border-radius: 25px;
+    box-shadow: black 0px 0px 50px 5px
+}
+
+.card-header{
+    @include common.flex();
+    height: 10%;
+    min-height: 10%;
+    max-height: 10%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: $primary-background-color;
+    color: #F5F5F5;
+}
+
+.card-body{
+    @include common.flex(column, space-evenly, center);
+    height: 80%;
+    min-height: 80%;
+    max-height: 80%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-footer{
+    @include common.flex();
+    height: 10%;
+    min-height: 10%;
+    max-height: 10%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: $primary-background-color;
+}
+
+.card-actions{
+    @include common.flex(row, space-around, center);
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.form-field{
+    min-width: 80%;
+    width: 80%;
+    max-width: 80%;
+    margin: 0px;
+    padding: 0px;
+}

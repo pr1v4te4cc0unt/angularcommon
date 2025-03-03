@@ -1,0 +1,26 @@
+@use '../../style/common.scss';
+@use '../../style/keyframes.scss';
+
+.container{
+    @include common.flex();
+    height: 75px;
+    min-height: 75px;
+    max-height: 75px;
+    width: 180px;
+    min-width: 180px;
+    max-width: 180px;
+    margin: 0px;
+    padding: 5px;
+}
+
+.mat-field{
+    @include common.flex();
+    height: 70px;
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+}
+
+button{
+    margin-bottom: 15px;
+}
